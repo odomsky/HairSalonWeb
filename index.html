@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Veronika Štogrová Hair & Braids – kadeřnické služby a zaplétání kanekalonu v Ostravě. Copánky, boxerské copy, clip-in copy, barvení, střihy." />
+  <meta name="keywords" content="kadeřnictví Ostrava, kanekalon Ostrava, copánky Ostrava, braiding, clip-in copy, zaplétání vlasů" />
+  <meta name="author" content="Veronika Štogrová" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Veronika Štogrová Hair & Braids" />
+  <meta property="og:description" content="Kadeřnické služby a zaplétání kanekalonu v Ostravě. Copánky, clip-in copy, střihy, barvení." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="cs_CZ" />
+
+  <title>Veronika Štogrová Hair & Braids | Kadeřnictví &amp; Kanekalon Ostrava</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="navbar" role="navigation" aria-label="Hlavní navigace">
+    <div class="nav-container">
+
+      <a href="#home" class="nav-logo" aria-label="Veronika Štogrová Hair &amp; Braids – zpět na začátek">
+        <span class="nav-logo-name">Veronika Štogrová</span>
+        <span class="nav-logo-sub">Hair &amp; Braids</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="nav-menu" role="list">
+        <li><a href="#home"     class="nav-link" data-i18n="nav_home">Domů</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav_services">Služby</a></li>
+        <li><a href="#kanekalon-benefits" class="nav-link" data-i18n="nav_kanekalon">Kanekalon</a></li>
+        <li><a href="#clipin"   class="nav-link" data-i18n="nav_clipin">Clip-in copy</a></li>
+        <li><a href="#gallery"  class="nav-link" data-i18n="nav_gallery">Galerie</a></li>
+        <li><a href="#pricing"  class="nav-link" data-i18n="nav_pricing">Ceník</a></li>
+        <li><a href="#contact"  class="nav-link nav-cta" data-i18n="nav_contact">Kontakt</a></li>
+      </ul>
+
+      <!-- Language switcher -->
+      <div class="lang-switcher" aria-label="Přepnout jazyk / Switch language">
+        <button class="lang-btn active" data-lang="cs" aria-label="Česky">CS</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile nav drawer -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobilní navigace">
+    <a href="#home"     class="nav-link" data-i18n="nav_home">Domů</a>
+    <a href="#about"    class="nav-link" data-i18n="about_tag">O mně</a>
+    <a href="#services" class="nav-link" data-i18n="nav_services">Služby</a>
+    <a href="#kanekalon-benefits" class="nav-link" data-i18n="nav_kanekalon">Kanekalon</a>
+    <a href="#clipin"   class="nav-link" data-i18n="nav_clipin">Clip-in copy</a>
+    <a href="#gallery"  class="nav-link" data-i18n="nav_gallery">Galerie</a>
+    <a href="#pricing"  class="nav-link" data-i18n="nav_pricing">Ceník</a>
+    <a href="#contact"  class="nav-link nav-cta" style="margin-top:12px;" data-i18n="nav_contact">Kontakt</a>
+
+    <!-- Language switcher in mobile nav -->
+    <div class="lang-switcher" aria-label="Přepnout jazyk / Switch language" style="margin-top:16px; margin-left:0;">
+      <button class="lang-btn active" data-lang="cs" aria-label="Česky">CS</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+
+    <!-- Decorative rings -->
+    <div class="hero-ring ring-1" aria-hidden="true"></div>
+    <div class="hero-ring ring-2" aria-hidden="true"></div>
+    <div class="hero-ring ring-3" aria-hidden="true"></div>
+
+    <!-- Floating shapes -->
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" aria-label="Ostrava – kadeřnictví &amp; braiding">
+        <span class="hero-badge-dot"></span>
+        <span data-i18n="hero_badge">Ostrava · Kadeřnictví &amp; Braiding</span>
+      </div>
+
+      <h1 class="hero-title">
+        Veronika Štogrová
+        <em data-i18n="hero_title_sub">Hair &amp; Braids</em>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Kadeřnické služby &amp; zaplétání kanekalonu</p>
+
+      <div class="hero-tags" role="list" aria-label="Nabídka služeb">
+        <span class="hero-tag" role="listitem" data-i18n="hero_tag1">✂️ Moderní střihy</span>
+        <span class="hero-tag" role="listitem" data-i18n="hero_tag2">🎨 Barvení</span>
+        <span class="hero-tag" role="listitem" data-i18n="hero_tag3">🌿 Copánky</span>
+        <span class="hero-tag" role="listitem" data-i18n="hero_tag4">✨ Kanekalon</span>
+        <span class="hero-tag" role="listitem" data-i18n="hero_tag5">💛 Ochranné účesy</span>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_book">
+          ✨ Objednat se
+        </a>
+        <a href="#pricing" class="btn btn-outline" data-i18n="hero_btn_pricing">
+          Ceník
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span data-i18n="hero_scroll">Scroll</span>
+      <div class="hero-scroll-arrow"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       O MNĚ (ABOUT)
+       ============================================================ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Text col -->
+        <div class="fade-in-left">
+          <span class="section-tag" data-i18n="about_tag">O mně</span>
+          <h2 class="about-tagline" data-i18n="about_tagline">
+            Zdravé vlasy &amp; krásné copy –<br>
+            <em>to je má vášeň</em>
+          </h2>
+
+          <p class="about-text" data-i18n="about_text">
+            Jmenuji se Veronika Štogrová a věnuji se kadeřnictví se specializací na zaplétání
+            kanekalonu a ochranné účesy. Kombinuji klasické kadeřnické služby s kreativním
+            braidingem – od přirozených účesů až po výrazné festivalové styly. Ke každé klientce
+            přistupuji individuálně, protože věřím, že správný účes dokáže dodat sebevědomí
+            a radost z každého dne.
+          </p>
+
+          <div class="about-values" role="list" aria-label="Moje hodnoty">
+            <div class="about-value-item" role="listitem">
+              <div class="about-value-icon" aria-hidden="true">🌿</div>
+              <span data-i18n="about_val1">Zdraví vlasů jako priorita č. 1</span>
+            </div>
+            <div class="about-value-item" role="listitem">
+              <div class="about-value-icon" aria-hidden="true">💜</div>
+              <span data-i18n="about_val2">Individuální přístup ke každé klientce</span>
+            </div>
+            <div class="about-value-item" role="listitem">
+              <div class="about-value-icon" aria-hidden="true">☕</div>
+              <span data-i18n="about_val3">Pohodlí a příjemná atmosféra</span>
+            </div>
+            <div class="about-value-item" role="listitem">
+              <div class="about-value-icon" aria-hidden="true">⭐</div>
+              <span data-i18n="about_val4">Dlouhá životnost a precizní zpracování</span>
+            </div>
+          </div>
+
+          <div class="about-specializations">
+            <h4 data-i18n="about_spec_title">Moje specializace</h4>
+            <ul class="spec-list" role="list">
+              <li class="spec-tag" data-i18n="spec1">Klasické střihy</li>
+              <li class="spec-tag" data-i18n="spec2">Barvení &amp; tónování</li>
+              <li class="spec-tag" data-i18n="spec3">Copánky s kanekalonem</li>
+              <li class="spec-tag" data-i18n="spec4">Clip-in copy</li>
+              <li class="spec-tag" data-i18n="spec5">Ochranné účesy</li>
+              <li class="spec-tag" data-i18n="spec6">Festivalové styly</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Visual col -->
+        <div class="about-visual fade-in-right">
+          <div class="about-photo-placeholder" aria-label="Fotografie Veroniky Štogrové – připravujeme">
+            <div class="photo-icon" aria-hidden="true">💇‍♀️</div>
+            <span class="photo-label" data-i18n="about_photo_label">Foto připravujeme</span>
+          </div>
+
+          <div class="about-stat-row" role="list" aria-label="Statistiky">
+            <div class="about-stat" role="listitem">
+              <div class="about-stat-number" data-i18n="stat1_num">5+</div>
+              <div class="about-stat-label" data-i18n="stat1_label">let praxe</div>
+            </div>
+            <div class="about-stat" role="listitem">
+              <div class="about-stat-number" data-i18n="stat2_num">200+</div>
+              <div class="about-stat-label" data-i18n="stat2_label">spokojených klientek</div>
+            </div>
+            <div class="about-stat" role="listitem">
+              <div class="about-stat-number" data-i18n="stat3_num">30+</div>
+              <div class="about-stat-label" data-i18n="stat3_label">stylů copánků</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES (NABÍDKA SLUŽEB)
+       ============================================================ -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="services_tag">Nabídka služeb</span>
+        <h2 class="section-title" data-i18n="services_title">Co pro vás <span>mohu udělat?</span></h2>
+        <p class="section-desc" data-i18n="services_desc">
+          Nabízím komplexní péči o vaše vlasy – od klasického kadeřnictví po kreativní
+          braiding a unikátní clip-in copy.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1: Classic -->
+        <div class="service-card fade-in">
+          <span class="service-icon" aria-hidden="true">✂️</span>
+          <h3 data-i18n="svc1_title">Klasické kadeřnické služby</h3>
+          <p class="service-desc" data-i18n="svc1_desc">Profesionální péče o vlasy s důrazem na zdraví a individualitu každé klientky.</p>
+          <ul class="service-list" role="list">
+            <li data-i18n="svc1_li1">Dámské střihy</li>
+            <li data-i18n="svc1_li2">Pánské střihy</li>
+            <li data-i18n="svc1_li3">Dětské střihy</li>
+            <li data-i18n="svc1_li4">Foukaná a styling</li>
+            <li data-i18n="svc1_li5">Úprava vlasů</li>
+            <li data-i18n="svc1_li6">Barvení</li>
+            <li data-i18n="svc1_li7">Tónování</li>
+            <li data-i18n="svc1_li8">Regenerace vlasů</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Braiding -->
+        <div class="service-card fade-in" id="braiding">
+          <span class="service-icon" aria-hidden="true">🌿</span>
+          <h3 data-i18n="svc2_title">Braiding &amp; Kanekalon</h3>
+          <p class="service-desc" data-i18n="svc2_desc">Ochranné a dekorativní účesy pro každou příležitost – od každodenního nošení po festivaly.</p>
+          <ul class="service-list" role="list">
+            <li data-i18n="svc2_li1">Zaplétání kanekalonu</li>
+            <li data-i18n="svc2_li2">Boxerské copánky</li>
+            <li data-i18n="svc2_li3">Festivalové účesy</li>
+            <li data-i18n="svc2_li4">Ochranné účesy</li>
+            <li data-i18n="svc2_li5">Barevné copy</li>
+            <li data-i18n="svc2_li6">Přirozené copy</li>
+            <li data-i18n="svc2_li7">Maxi copy</li>
+            <li data-i18n="svc2_li8">Účesy pro děti</li>
+            <li data-i18n="svc2_li9">Účesy na akce &amp; párty</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Clip-in -->
+        <div class="service-card service-card-featured fade-in" id="clipin">
+          <div class="service-badge" data-i18n="svc3_badge">Unikátní!</div>
+          <span class="service-icon" aria-hidden="true">⭐</span>
+          <h3 data-i18n="svc3_title">Clip-in copy</h3>
+          <p class="service-desc" data-i18n="svc3_desc">Ručně vyráběné clip-in copy pro okamžitou proměnu. Elegantní i extravagantní – výběr je na vás.</p>
+          <ul class="service-list" role="list">
+            <li data-i18n="svc3_li1">Ručně vyráběné</li>
+            <li data-i18n="svc3_li2">Barevné &amp; extravagantní</li>
+            <li data-i18n="svc3_li3">Elegantní přirozené</li>
+            <li data-i18n="svc3_li4">Maxi copy</li>
+            <li data-i18n="svc3_li5">Rychlá aplikace</li>
+            <li data-i18n="svc3_li6">Opakované použití</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRO KOHO (TARGET AUDIENCE)
+       ============================================================ -->
+  <section id="target" class="target">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="target_tag">Pro koho</span>
+        <h2 class="section-title" data-i18n="target_title">Vhodné pro <span>každou z vás</span></h2>
+        <p class="section-desc" data-i18n="target_desc">
+          Moje služby jsou určeny pro ženy, dívky a děti všech věkových kategorií
+          s různými typy vlasů.
+        </p>
+      </div>
+
+      <div class="target-grid">
+
+        <div class="target-card fade-in">
+          <span class="target-icon" aria-hidden="true">💫</span>
+          <h4 data-i18n="target1_title">Hledáte změnu?</h4>
+          <p data-i18n="target1_desc">Chcete nový styl nebo osvěžit svůj look? Najdeme pro vás ideální účes.</p>
+        </div>
+
+        <div class="target-card fade-in">
+          <span class="target-icon" aria-hidden="true">🌸</span>
+          <h4 data-i18n="target2_title">Děti</h4>
+          <p data-i18n="target2_desc">Zaplétáme i dětské vlasy – bezpečně, šetrně a s úsměvem.</p>
+        </div>
+
+        <div class="target-card fade-in">
+          <span class="target-icon" aria-hidden="true">🎪</span>
+          <h4 data-i18n="target3_title">Festivalové návštěvnice</h4>
+          <p data-i18n="target3_desc">Výrazný festivalový look, který vydrží celý víkend a déle.</p>
+        </div>
+
+        <div class="target-card fade-in">
+          <span class="target-icon" aria-hidden="true">🕊️</span>
+          <h4 data-i18n="target4_title">Jemné vlasy</h4>
+          <p data-i18n="target4_desc">Šetrné techniky pro jemné a citlivé vlasy bez zbytečné zátěže.</p>
+        </div>
+
+        <div class="target-card fade-in">
+          <span class="target-icon" aria-hidden="true">🛡️</span>
+          <h4 data-i18n="target5_title">Ochranné účesy</h4>
+          <p data-i18n="target5_desc">Chraňte své vlasy před poškozením a zároveň vypadejte skvěle.</p>
+        </div>
+
+        <div class="target-card fade-in">
+          <span class="target-icon" aria-hidden="true">✨</span>
+          <h4 data-i18n="target6_title">Nováčci v kanekalonu</h4>
+          <p data-i18n="target6_desc">Žádné zkušenosti? Nevadí! Poradím vám s výběrem barvy i stylu.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       KANEKALON BENEFITS
+       ============================================================ -->
+  <section id="kanekalon-benefits" class="benefits">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="kanekalon_tag">Proč kanekalon?</span>
+        <h2 class="section-title" style="color: #fff;" data-i18n="kanekalon_title">Výhody <span>kanekalonu</span></h2>
+        <p class="section-desc" style="color: rgba(255,255,255,0.6);" data-i18n="kanekalon_desc">
+          Kanekalon je syntetické vlákno, které umožňuje kreativní i ochranné účesy bez trvalého zásahu do vašich vlasů.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+
+        <div class="benefit-item fade-in">
+          <div class="benefit-icon-wrap" aria-hidden="true">🌱</div>
+          <div class="benefit-text">
+            <h4 data-i18n="kben1_title">Prodloužení bez trvalého zásahu</h4>
+            <p data-i18n="kben1_text">Získáte dlouhé vlasy nebo výrazný účes bez barvení, chemie nebo trvalého poškození.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item fade-in">
+          <div class="benefit-icon-wrap" aria-hidden="true">🛡️</div>
+          <div class="benefit-text">
+            <h4 data-i18n="kben2_title">Ochrana vlastních vlasů</h4>
+            <p data-i18n="kben2_text">Copánky s kanekalonem jsou ochranný účes – vaše vlasy rostou pod nimi v klidu.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item fade-in">
+          <div class="benefit-icon-wrap" aria-hidden="true">🎨</div>
+          <div class="benefit-text">
+            <h4 data-i18n="kben3_title">Výrazný styl bez barvení</h4>
+            <p data-i18n="kben3_text">Stovky barev kanekalonu vám umožní experimentovat bez rizika poškození vlasů barvením.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item fade-in">
+          <div class="benefit-icon-wrap" aria-hidden="true">⚡</div>
+          <div class="benefit-text">
+            <h4 data-i18n="kben4_title">Rychlá změna vzhledu</h4>
+            <p data-i18n="kben4_text">Nový účes za pár hodin – bez čekání na dorůstání nebo měsíce péče.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item fade-in">
+          <div class="benefit-icon-wrap" aria-hidden="true">⏱️</div>
+          <div class="benefit-text">
+            <h4 data-i18n="kben5_title">Dlouhá výdrž</h4>
+            <p data-i18n="kben5_text">Správně zaplétaný kanekalon vydrží 4–8 týdnů. Dlouho krásně vypadat s minimální údržbou.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY
+       ============================================================ -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="gallery_tag">Galerie</span>
+        <h2 class="section-title" data-i18n="gallery_title">Ukázky <span>mých prací</span></h2>
+        <p class="section-desc" data-i18n="gallery_desc">Každý účes je originál. Prohlédněte si ukázky mých prací.</p>
+      </div>
+
+      <p class="gallery-note" data-i18n="gallery_note">📸 Fotogalerie – brzy doplníme</p>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-cell fade-in" tabindex="0" aria-label="Galerie: Střihy" data-i18n-aria="gal1_aria">
+          <span class="gallery-icon" aria-hidden="true">✂️</span>
+          <span class="gallery-label" data-i18n="gal1">Střihy</span>
+        </div>
+
+        <div class="gallery-cell fade-in" tabindex="0" aria-label="Galerie: Barvení" data-i18n-aria="gal2_aria">
+          <span class="gallery-icon" aria-hidden="true">🎨</span>
+          <span class="gallery-label" data-i18n="gal2">Barvení</span>
+        </div>
+
+        <div class="gallery-cell fade-in" tabindex="0" aria-label="Galerie: Copánky" data-i18n-aria="gal3_aria">
+          <span class="gallery-icon" aria-hidden="true">🌿</span>
+          <span class="gallery-label" data-i18n="gal3">Copánky</span>
+        </div>
+
+        <div class="gallery-cell fade-in" tabindex="0" aria-label="Galerie: Kanekalon" data-i18n-aria="gal4_aria">
+          <span class="gallery-icon" aria-hidden="true">💜</span>
+          <span class="gallery-label" data-i18n="gal4">Kanekalon</span>
+        </div>
+
+        <div class="gallery-cell fade-in" tabindex="0" aria-label="Galerie: Dětské účesy" data-i18n-aria="gal5_aria">
+          <span class="gallery-icon" aria-hidden="true">🌸</span>
+          <span class="gallery-label" data-i18n="gal5">Dětské účesy</span>
+        </div>
+
+        <div class="gallery-cell fade-in" tabindex="0" aria-label="Galerie: Clip-in copy" data-i18n-aria="gal6_aria">
+          <span class="gallery-icon" aria-hidden="true">⭐</span>
+          <span class="gallery-label" data-i18n="gal6">Clip-in copy</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROCESS (PRŮBĚH OBJEDNÁNÍ)
+       ============================================================ -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="process_tag">Jak to funguje</span>
+        <h2 class="section-title" data-i18n="process_title">Průběh <span>objednání</span></h2>
+        <p class="section-desc" data-i18n="process_desc">
+          Objednání je jednoduché – stačí pár kroků a váš nový účes je na cestě.
+        </p>
+      </div>
+
+      <div class="process-steps">
+
+        <div class="process-step fade-in">
+          <div class="process-number" aria-hidden="true" data-i18n="step1_num">01</div>
+          <div class="process-content">
+            <span class="process-icon" aria-hidden="true">💬</span>
+            <h4 data-i18n="step1_title">Napíšete zprávu</h4>
+            <p data-i18n="step1_desc">Kontaktujte mě přes Instagram, WhatsApp nebo formulář níže.</p>
+          </div>
+        </div>
+
+        <div class="process-step fade-in">
+          <div class="process-number" aria-hidden="true" data-i18n="step2_num">02</div>
+          <div class="process-content">
+            <span class="process-icon" aria-hidden="true">🎯</span>
+            <h4 data-i18n="step2_title">Domluvíme účes</h4>
+            <p data-i18n="step2_desc">Probereme, jaký účes chcete, a navrhnu nejlepší variantu pro váš typ vlasů.</p>
+          </div>
+        </div>
+
+        <div class="process-step fade-in">
+          <div class="process-number" aria-hidden="true" data-i18n="step3_num">03</div>
+          <div class="process-content">
+            <span class="process-icon" aria-hidden="true">🎨</span>
+            <h4 data-i18n="step3_title">Vybereme barvu</h4>
+            <p data-i18n="step3_desc">Pokud zvolíte kanekalon, pomůžu vám vybrat barvu nebo kombinaci barev.</p>
+          </div>
+        </div>
+
+        <div class="process-step fade-in">
+          <div class="process-number" aria-hidden="true" data-i18n="step4_num">04</div>
+          <div class="process-content">
+            <span class="process-icon" aria-hidden="true">✨</span>
+            <h4 data-i18n="step4_title">Realizace</h4>
+            <p data-i18n="step4_desc">Přijdete na domluvený termín a odejdete s krásným novým účesem!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRICING (CENÍK)
+       ============================================================ -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="pricing_tag">Ceník</span>
+        <h2 class="section-title" data-i18n="pricing_title">Orientační <span>ceny služeb</span></h2>
+        <p class="section-desc" data-i18n="pricing_desc">
+          Konečná cena závisí na délce a hustotě vlasů, složitosti účesu a délce kanekalonu. Nezávazná konzultace zdarma.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Kadeřnické služby -->
+        <div class="pricing-card fade-in">
+          <span class="pricing-icon" aria-hidden="true">✂️</span>
+          <h3 class="pricing-title" data-i18n="price1_title">Kadeřnické služby</h3>
+          <ul class="pricing-items" role="list">
+            <li class="pricing-item" data-i18n="price1_li1">Dámský střih od 350 Kč</li>
+            <li class="pricing-item" data-i18n="price1_li2">Pánský střih od 200 Kč</li>
+            <li class="pricing-item" data-i18n="price1_li3">Barvení od 800 Kč</li>
+            <li class="pricing-item" data-i18n="price1_li4">Foukaná od 250 Kč</li>
+            <li class="pricing-item" data-i18n="price1_li5">Regenerace od 300 Kč</li>
+          </ul>
+          <a href="#contact" class="btn btn-purple pricing-cta" data-i18n="price1_cta">Objednat se</a>
+        </div>
+
+        <!-- Braiding -->
+        <div class="pricing-card fade-in">
+          <span class="pricing-icon" aria-hidden="true">🌿</span>
+          <h3 class="pricing-title" data-i18n="price2_title">Braiding &amp; Kanekalon</h3>
+          <ul class="pricing-items" role="list">
+            <li class="pricing-item" data-i18n="price2_li1">Copánky od 800 Kč</li>
+            <li class="pricing-item" data-i18n="price2_li2">Festivalové účesy od 600 Kč</li>
+            <li class="pricing-item" data-i18n="price2_li3">Maxi copy od 1 500 Kč</li>
+            <li class="pricing-item" data-i18n="price2_li4">Dětské copy od 500 Kč</li>
+            <li class="pricing-item" data-i18n="price2_li5">Boxerské copánky od 1 200 Kč</li>
+          </ul>
+          <a href="#contact" class="btn btn-purple pricing-cta" data-i18n="price2_cta">Objednat se</a>
+        </div>
+
+        <!-- Clip-in (featured) -->
+        <div class="pricing-card pricing-card-featured fade-in">
+          <div class="pricing-featured-badge" data-i18n="price3_badge">Výroba na míru</div>
+          <span class="pricing-icon" style="margin-top: 20px;" aria-hidden="true">⭐</span>
+          <h3 class="pricing-title" data-i18n="price3_title">Clip-in copy</h3>
+          <ul class="pricing-items" role="list">
+            <li class="pricing-item" data-i18n="price3_li1">Pár copy od 200 Kč</li>
+            <li class="pricing-item" data-i18n="price3_li2">Sada 4 párů od 700 Kč</li>
+            <li class="pricing-item" data-i18n="price3_li3">Maxi copy od 350 Kč / ks</li>
+            <li class="pricing-item" data-i18n="price3_li4">Barevné sady od 500 Kč</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary pricing-cta" data-i18n="price3_cta">Objednat se</a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note" style="text-align:center; margin-top:24px;" data-i18n="pricing_note">Ceny jsou orientační. Přesná cena po konzultaci.</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="faq_tag">Časté dotazy</span>
+        <h2 class="section-title" data-i18n="faq_title">Nejčastější <span>otázky</span></h2>
+      </div>
+
+      <ul class="faq-list fade-in" role="list">
+
+        <li class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q1">Jak dlouho vydrží kanekalon?</span>
+            <span class="faq-arrow" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner" data-i18n="faq_a1">
+              Správně zaplétaný kanekalon vydrží 4–8 týdnů. Záleží na typu účesu, péči a vašem životním stylu. S dodržením doporučeného postupu péče vydrží co nejdéle.
+            </div>
+          </div>
+        </li>
+
+        <li class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q2">Bolí zaplétání?</span>
+            <span class="faq-arrow" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner" data-i18n="faq_a2">
+              Při zaplétání může být cítit mírné tahání, zejména u copánků u kořínků. Zaplétám vždy šetrně a dle vašich pocitů. Nepříjemnou bolest si říkejte – vždy přizpůsobím techniku.
+            </div>
+          </div>
+        </li>
+
+        <li class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q3">Můžu si umýt vlasy s kanekalonem?</span>
+            <span class="faq-arrow" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner" data-i18n="faq_a3">
+              Ano! Vlasy s kanekalonem se mýt dají – jen trochu jinak než obvykle. Doporučuji ředěný šampon, jemnou masáž pokožky hlavy a důkladné sušení. Po objednání dostanete kompletní návod na péči.
+            </div>
+          </div>
+        </li>
+
+        <li class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q4">Je kanekalon vhodný pro děti?</span>
+            <span class="faq-arrow" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner" data-i18n="faq_a4">
+              Ano, mám s dětskými zákaznicemi bohaté zkušenosti. Používám šetrné techniky, zaplétám lehčeji a účes přizpůsobím věku a délce vlasů dítěte.
+            </div>
+          </div>
+        </li>
+
+        <li class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q5">Poškodí kanekalon moje vlasy?</span>
+            <span class="faq-arrow" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner" data-i18n="faq_a5">
+              Ne, pokud je zaplétán správně. Kanekalon je naopak ochranný účes – vaše vlasy jsou ukryty a chráněny. Klíčem je správná technika, ne příliš těsné zaplétání a pravidelná péče o pokožku hlavy.
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="contact_tag">Kontakt</span>
+        <h2 class="section-title" style="color:#fff;" data-i18n="contact_title">Objednejte se <span>ještě dnes</span></h2>
+        <p class="section-desc" style="color:rgba(255,255,255,0.7);" data-i18n="contact_desc">Ráda se vám ozvu co nejdříve. Napište mi přes Instagram, WhatsApp nebo formulář.</p>
+      </div>
+
+      <p class="contact-cta fade-in" data-i18n="contact_cta">
+        Objednejte si termín ještě dnes ✨
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div class="contact-info fade-in-left">
+          <h3 data-i18n="form_title">Napište mi</h3>
+
+          <div class="contact-items">
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📞</div>
+              <div class="contact-item-text">
+                <strong data-i18n="contact_phone_label">Telefon</strong>
+                <a href="tel:+420000000000" data-i18n="contact_phone_val">+420 XXX XXX XXX</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📸</div>
+              <div class="contact-item-text">
+                <strong data-i18n="contact_ig_label">Instagram</strong>
+                <a href="https://instagram.com/veronika.stogrova.hair" target="_blank" rel="noopener">@veronika.stogrova.hair</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">💬</div>
+              <div class="contact-item-text">
+                <strong data-i18n="contact_wa_label">WhatsApp</strong>
+                <a href="https://wa.me/420000000000" target="_blank" rel="noopener" data-i18n="contact_wa_val">Napsat na WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📍</div>
+              <div class="contact-item-text">
+                <strong data-i18n="contact_location_label">Lokace</strong>
+                <span data-i18n="contact_location_val">Ostrava a okolí</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form-wrap fade-in-right">
+          <h3 data-i18n="form_title">Napište mi</h3>
+
+          <form class="contact-form" novalidate aria-label="Kontaktní formulář">
+            <div class="form-group">
+              <label for="fname" data-i18n="form_name_label">Vaše jméno</label>
+              <input
+                type="text"
+                id="fname"
+                name="name"
+                data-i18n-placeholder="form_name_placeholder"
+                placeholder="Jak se jmenujete?"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="femail" data-i18n="form_email_label">E-mail</label>
+              <input
+                type="email"
+                id="femail"
+                name="email"
+                data-i18n-placeholder="form_email_placeholder"
+                placeholder="váš@email.cz"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="fmessage" data-i18n="form_msg_label">Zpráva</label>
+              <textarea
+                id="fmessage"
+                name="message"
+                data-i18n-placeholder="form_msg_placeholder"
+                placeholder="Jaký účes vás zajímá? Máte dotaz?"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" data-i18n="form_submit">
+              Objednat se
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div>
+          <div class="footer-logo-name">Veronika Štogrová</div>
+          <div class="footer-logo-sub">Hair &amp; Braids</div>
+        </div>
+
+        <nav class="footer-links" aria-label="Patičková navigace">
+          <a href="#home" data-i18n="nav_home">Domů</a>
+          <a href="#about" data-i18n="about_tag">O mně</a>
+          <a href="#services" data-i18n="nav_services">Služby</a>
+          <a href="#gallery" data-i18n="nav_gallery">Galerie</a>
+          <a href="#pricing" data-i18n="nav_pricing">Ceník</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+        </nav>
+
+        <div class="footer-divider" role="separator"></div>
+
+        <p class="footer-copy" data-i18n="footer_copy">
+          &copy; 2025 Veronika Štogrová Hair &amp; Braids. Všechna práva vyhrazena.
+        </p>
+        <p class="footer-city" data-i18n="footer_city">Ostrava, Česká republika</p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>
