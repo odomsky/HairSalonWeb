@@ -17,7 +17,7 @@ const translations = {
     nav_contact:  'Kontakt',
 
     /* --- Hero --- */
-    hero_badge:    'Salon Dudek · Praha 10 Vršovice · pátky',
+    hero_badge:    'Salon Dudek · Praha 10 Vršovice',
     hero_title_sub:'by Veronika Štogrová',
     hero_subtitle: 'Kadeřnice a braiderka v Praze 10. Copánky a dready v barvě vašich vlasů',
     hero_tag1:     '✂️ Moderní střihy',
@@ -225,7 +225,7 @@ const translations = {
     contact_desc:  'Ráda se vám ozvu co nejdříve. Napište mi na Instagram nebo přes formulář.',
     contact_ig_label:       'Instagram',
     contact_location_label: 'Lokace',
-    contact_location_val:   '<a href="https://www.google.com/maps/search/?api=1&amp;query=Na+Kov%C3%A1rn%C4%9B+8%2C+Praha+10" target="_blank" rel="noopener">Salon Dudek, Na Kovárně 8, Praha 10 Vršovice</a><br>pátky',
+    contact_location_val:   '<a href="https://www.google.com/maps/search/?api=1&amp;query=Na+Kov%C3%A1rn%C4%9B+8%2C+Praha+10" target="_blank" rel="noopener">Salon Dudek, Na Kovárně 8, Praha 10 Vršovice</a>',
 
     /* --- Form --- */
     form_title:            'Napište mi',
@@ -261,7 +261,7 @@ const translations = {
     nav_contact:  'Contact',
 
     /* --- Hero --- */
-    hero_badge:    'Salon Dudek · Prague 10 Vršovice · Fridays',
+    hero_badge:    'Salon Dudek · Prague 10 Vršovice',
     hero_title_sub:'by Veronika Štogrová',
     hero_subtitle: 'Hairdresser &amp; braider in Prague 10. Braids and dreads in the colour of your hair',
     hero_tag1:     '✂️ Modern cuts',
@@ -469,7 +469,7 @@ const translations = {
     contact_desc:  'I\'ll get back to you as soon as possible. Message me on Instagram or via the form.',
     contact_ig_label:       'Instagram',
     contact_location_label: 'Location',
-    contact_location_val:   '<a href="https://www.google.com/maps/search/?api=1&amp;query=Na+Kov%C3%A1rn%C4%9B+8%2C+Praha+10" target="_blank" rel="noopener">Salon Dudek, Na Kovárně 8, Prague 10 Vršovice</a><br>Fridays',
+    contact_location_val:   '<a href="https://www.google.com/maps/search/?api=1&amp;query=Na+Kov%C3%A1rn%C4%9B+8%2C+Praha+10" target="_blank" rel="noopener">Salon Dudek, Na Kovárně 8, Prague 10 Vršovice</a>',
 
     /* --- Form --- */
     form_title:            'Send me a message',
