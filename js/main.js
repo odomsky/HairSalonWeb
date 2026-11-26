@@ -261,3 +261,61 @@ function showFormFeedback(form, message, type) {
     }, 4000);
   }
 }
+
+/* ============================================================
+   GALLERY LIGHTBOX
+   ============================================================ */
+(function initLightbox() {
+  const items = Array.from(document.querySelectorAll('[data-lightbox]'));
+  if (!items.length) return;
+
+  const box = document.createElement('div');
+  box.className = 'lightbox';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-modal', 'true');
+  box.setAttribute('aria-label', 'Fotografie z galerie');
+  box.innerHTML =
+    '<button type="button" class="lightbox-close" aria-label="Zavřít">&times;</button>' +
+    '<button type="button" class="lightbox-prev" aria-label="Předchozí">&#8249;</button>' +
+    '<img alt="">' +
+    '<button type="button" class="lightbox-next" aria-label="Další">&#8250;</button>' +
+    '<p class="lightbox-caption"></p>';
+  document.body.appendChild(box);
+
+  const img = box.querySelector('img');
+  const caption = box.querySelector('.lightbox-caption');
+  let index = 0;
+  let lastFocus = null;
+
+  function show(i) {
+    index = (i + items.length) % items.length;
+    const thumb = items[index].querySelector('img');
+    img.src = items[index].getAttribute('href');
+    img.alt = thumb.alt;
+    caption.textContent = thumb.alt;
+  }
+  function open(i) {
+    lastFocus = document.activeElement;
+    show(i);
+    box.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    box.querySelector('.lightbox-close').focus();
+  }
+  function close() {
+    box.classList.remove('open');
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  items.forEach((a, i) => a.addEventListener('click', e => { e.preventDefault(); open(i); }));
+  box.querySelector('.lightbox-close').addEventListener('click', close);
+  box.querySelector('.lightbox-prev').addEventListener('click', () => show(index - 1));
+  box.querySelector('.lightbox-next').addEventListener('click', () => show(index + 1));
+  box.addEventListener('click', e => { if (e.target === box) close(); });
+  document.addEventListener('keydown', e => {
+    if (!box.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+  });
+})();
