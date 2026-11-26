@@ -196,39 +196,58 @@ function initFAQ() {
 function initFormSubmit() {
   const form = document.querySelector('.contact-form');
   if (!form) return;
+  const t = key => (typeof getT === 'function' ? getT(key) : key);
+  const lang = () => (typeof getCurrentLang === 'function' ? getCurrentLang() : 'cs');
+  const chips = Array.from(form.querySelectorAll('.interest-chip'));
+  const waBtn = form.querySelector('#sendWa');
+  const igBtn = form.querySelector('#sendIg');
+  const PHONE = '420721085415';
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  chips.forEach(chip => chip.addEventListener('click', () => {
+    chip.setAttribute('aria-pressed', chip.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+    update();
+  }));
+  form.addEventListener('input', update);
+  form.addEventListener('submit', e => e.preventDefault());
 
-    const name    = form.querySelector('#fname');
-    const email   = form.querySelector('#femail');
-    const message = form.querySelector('#fmessage');
-    const btn     = form.querySelector('.form-submit');
+  // Builds the prefilled message from the chosen interests, name and note.
+  function buildMessage() {
+    const picked = chips.filter(c => c.getAttribute('aria-pressed') === 'true')
+                        .map(c => c.dataset[lang() === 'en' ? 'en' : 'cs']);
+    const name = form.querySelector('#fname').value.trim();
+    const note = form.querySelector('#fmessage').value.trim();
+    let text = picked.length ? t('msg_hello') + ' ' + picked.join(', ') + '.' : t('msg_hello_plain');
+    if (note) text += '\n' + note;
+    if (name) text += '\n' + t('msg_name') + ': ' + name;
+    return text;
+  }
 
-    if (!name.value.trim() || !message.value.trim()) {
-      showFormFeedback(form, typeof getT === 'function' ? getT('form_err_fields') : 'Prosím vyplňte jméno a zprávu.', 'error');
-      return;
-    }
+  function update() {
+    waBtn.href = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(buildMessage());
+  }
 
-    if (email.value.trim() && !isValidEmail(email.value)) {
-      showFormFeedback(form, typeof getT === 'function' ? getT('form_err_email') : 'Zadejte prosím platnou e-mailovou adresu.', 'error');
-      return;
-    }
-
-    // The site has no backend: copy the message and open an Instagram DM to @revu_braidart.
-    const text = name.value.trim()
-      + (email.value.trim() ? ' (' + email.value.trim() + ')' : '')
-      + '\n\n' + message.value.trim();
+  // Instagram cannot prefill a DM: copy the text first, then the link opens the chat.
+  igBtn.addEventListener('click', () => {
+    const text = buildMessage();
     const copied = (navigator.clipboard && navigator.clipboard.writeText)
       ? navigator.clipboard.writeText(text)
       : Promise.reject(new Error('clipboard unavailable'));
-    window.open('https://ig.me/m/revu_braidart', '_blank', 'noopener');
-
     copied.then(
-      () => showFormFeedback(form, typeof getT === 'function' ? getT('form_ig_copied') : 'Zprávu jsem zkopírovala. Na Instagramu ji stačí vložit a odeslat.', 'success'),
-      () => showFormFeedback(form, typeof getT === 'function' ? getT('form_ig_manual') : 'Otevírám Instagram. Zprávu mi tam prosím pošlete.', 'success')
+      () => showFormFeedback(form, t('form_ig_copied'), 'success'),
+      () => showFormFeedback(form, t('form_ig_manual'), 'success')
     );
   });
+
+  // The floating button carries a generic greeting.
+  const fab = document.getElementById('waFloat');
+  if (fab) fab.addEventListener('click', () => {
+    fab.href = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(t('msg_hello_plain'));
+  });
+
+  // Keep the WhatsApp link in the current language after a language switch.
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => setTimeout(update, 0)));
+
+  update();
 }
 
 function isValidEmail(email) {
@@ -318,4 +337,14 @@ function showFormFeedback(form, message, type) {
     if (e.key === 'ArrowLeft') show(index - 1);
     if (e.key === 'ArrowRight') show(index + 1);
   });
+})();
+
+/* Hide the floating WhatsApp button while the contact section is on screen. */
+(function initWaFloat() {
+  const fab = document.getElementById('waFloat');
+  const contact = document.getElementById('contact');
+  if (!fab || !contact || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => {
+    fab.classList.toggle('wa-float-hidden', entry.isIntersecting);
+  }, { threshold: 0.15 }).observe(contact);
 })();

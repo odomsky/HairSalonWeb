@@ -1962,3 +1962,37 @@ ul {
 .footer-logo-name { letter-spacing: 0.18em; }
 /* top bar logo keeps the original serif */
 .nav-logo-name { font-family: 'Cormorant Garamond', Georgia, serif; letter-spacing: 0.12em; }
+
+/* ============================================================
+   MESSAGE BOOKING (WhatsApp / Instagram)
+   ============================================================ */
+.form-label { display: block; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 10px; }
+.interest-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.interest-chip {
+  font: 400 0.9rem var(--font-body); color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 40px; padding: 8px 16px; cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+.interest-chip:hover { border-color: var(--color-accent); }
+.interest-chip[aria-pressed="true"] { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-dark); font-weight: 700; }
+.interest-chip:focus-visible { outline: 2px solid var(--color-accent-light); outline-offset: 2px; }
+.message-buttons { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 6px; }
+@media (min-width: 560px) { .message-buttons { grid-template-columns: 1fr 1fr; } }
+.message-buttons .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
+.btn-wa { background: #25D366; color: #0b3d1f; }
+.btn-wa:hover { background: #1ebe5a; color: #0b3d1f; }
+.btn-ig { background: linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888); color: #fff; }
+.btn-ig:hover { filter: brightness(1.08); color: #fff; }
+.message-hint { margin-top: 12px; font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+.contact-salon-links { display: block; margin-top: 4px; font-size: 0.85rem; }
+.contact-salon-links a { color: var(--color-accent-light); }
+.wa-float {
+  position: fixed; right: 18px; bottom: 18px; z-index: 1500;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25); transition: transform var(--transition-fast);
+}
+.wa-float:hover { transform: scale(1.08); color: #fff; }
+.wa-float { transition: transform var(--transition-fast), opacity var(--transition-fast); }
+.wa-float.wa-float-hidden { opacity: 0; pointer-events: none; transform: scale(0.8); }
