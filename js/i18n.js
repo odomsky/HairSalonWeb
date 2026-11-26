@@ -45,12 +45,6 @@ const translations = {
     spec5: 'Ochranné účesy',
     spec6: 'Festivalové styly',
     about_photo_label: 'Foto připravujeme',
-    stat1_num:   '5+',
-    stat1_label: 'let praxe',
-    stat2_num:   '200+',
-    stat2_label: 'spokojených klientek',
-    stat3_num:   '30+',
-    stat3_label: 'stylů copánků',
 
     /* --- Services --- */
     services_tag:  'Nabídka služeb',
@@ -380,12 +374,6 @@ const translations = {
     spec5: 'Protective styles',
     spec6: 'Festival styles',
     about_photo_label: 'Photo coming soon',
-    stat1_num:   '5+',
-    stat1_label: 'years of experience',
-    stat2_num:   '200+',
-    stat2_label: 'happy clients',
-    stat3_num:   '30+',
-    stat3_label: 'braid styles',
 
     /* --- Services --- */
     services_tag:  'Services',
