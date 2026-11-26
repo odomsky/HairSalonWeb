@@ -1,5 +1,5 @@
 /* ============================================================
-   Veronika Štogrová Hair & Braids — Main JS
+   Veronika Štogrová Hair & Braids: Main JS
    ============================================================ */
 
 'use strict';
@@ -205,26 +205,29 @@ function initFormSubmit() {
     const message = form.querySelector('#fmessage');
     const btn     = form.querySelector('.form-submit');
 
-    if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-      showFormFeedback(form, typeof getT === 'function' ? getT('form_err_fields') : 'Prosím vyplňte všechna pole.', 'error');
+    if (!name.value.trim() || !message.value.trim()) {
+      showFormFeedback(form, typeof getT === 'function' ? getT('form_err_fields') : 'Prosím vyplňte jméno a zprávu.', 'error');
       return;
     }
 
-    if (!isValidEmail(email.value)) {
+    if (email.value.trim() && !isValidEmail(email.value)) {
       showFormFeedback(form, typeof getT === 'function' ? getT('form_err_email') : 'Zadejte prosím platnou e-mailovou adresu.', 'error');
       return;
     }
 
-    // Simulate sending
-    btn.textContent = typeof getT === 'function' ? getT('form_sending') : 'Odesílám...';
-    btn.disabled = true;
+    // The site has no backend: copy the message and open an Instagram DM to @revu_braidart.
+    const text = name.value.trim()
+      + (email.value.trim() ? ' (' + email.value.trim() + ')' : '')
+      + '\n\n' + message.value.trim();
+    const copied = (navigator.clipboard && navigator.clipboard.writeText)
+      ? navigator.clipboard.writeText(text)
+      : Promise.reject(new Error('clipboard unavailable'));
+    window.open('https://ig.me/m/revu_braidart', '_blank', 'noopener');
 
-    setTimeout(() => {
-      showFormFeedback(form, typeof getT === 'function' ? getT('form_success') : '✓ Zpráva odeslána! Ozvu se co nejdříve.', 'success');
-      form.reset();
-      btn.textContent = typeof getT === 'function' ? getT('form_btn_reset') : 'Objednat se';
-      btn.disabled = false;
-    }, 1400);
+    copied.then(
+      () => showFormFeedback(form, typeof getT === 'function' ? getT('form_ig_copied') : 'Zprávu jsem zkopírovala. Na Instagramu ji stačí vložit a odeslat.', 'success'),
+      () => showFormFeedback(form, typeof getT === 'function' ? getT('form_ig_manual') : 'Otevírám Instagram. Zprávu mi tam prosím pošlete.', 'success')
+    );
   });
 }
 
