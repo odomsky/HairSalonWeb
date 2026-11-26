@@ -231,7 +231,7 @@ const translations = {
     pl_c5_i4_p: '1 800 Kč',
     pl_note1: '<strong>Ceny jsou orientační.</strong> Konečná cena se odvíjí od použitého množství materiálu, hustoty a délky vlasů a požadované délky účesu.',
     pl_note2: 'Rezervace termínu (záloha): 500 – 2 000 Kč.',
-    pl_note3: 'Ceník platný od 1. 12. 2026.',
+    pl_note3: 'Ceník platný od 1. 12. 2026. Nejsem plátce DPH.',
     pricing_tag:  'Ceník',
     pricing_title:'Orientační <span>ceny služeb</span>',
     pricing_desc: 'Ceny jsou orientační, přesnou cenu vám řeknu po krátké konzultaci zdarma.',
@@ -325,6 +325,10 @@ const translations = {
     contact_cta: 'Objednejte si termín ještě dnes ✨',
 
     /* --- Footer --- */
+    footer_legal: 'Veronika Štogrová, IČ 08509395, místo podnikání Albíny Hochové 408/38, 103 00 Praha 10.<br>Fyzická osoba zapsaná v živnostenském rejstříku. Nejsem plátce DPH.',
+    footer_legal_link: 'Obchodní a právní informace',
+    footer_privacy_link: 'Ochrana osobních údajů',
+    footer_claims_link: 'Reklamace',
     footer_copy: '&copy; 2026 Revu Hair and Braids, Veronika Štogrová. Všechna práva vyhrazena.',
     footer_city: 'Salon Dudek, Na Kovárně 8, Praha 10 Vršovice',
 
@@ -560,7 +564,7 @@ const translations = {
     pl_c5_i4_p: '1,800 CZK',
     pl_note1: '<strong>Prices are indicative.</strong> The final price depends on the amount of material used, the density and length of your hair and the length of the style.',
     pl_note2: 'Booking deposit: 500 – 2,000 CZK.',
-    pl_note3: 'Price list valid from 1 December 2026.',
+    pl_note3: 'Price list valid from 1 December 2026. Not a VAT payer.',
     pricing_tag:  'Pricing',
     pricing_title:'Approximate <span>service prices</span>',
     pricing_desc: 'Prices are indicative. I will give you an exact price after a short free consultation.',
@@ -654,6 +658,10 @@ const translations = {
     contact_cta: 'Book your appointment today ✨',
 
     /* --- Footer --- */
+    footer_legal: 'Veronika Štogrová, ID No. 08509395, registered business address Albíny Hochové 408/38, 103 00 Prague 10.<br>Sole trader registered in the Trade Register. Not a VAT payer.',
+    footer_legal_link: 'Legal information (in Czech)',
+    footer_privacy_link: 'Privacy',
+    footer_claims_link: 'Complaints',
     footer_copy: '&copy; 2026 Revu Hair and Braids, Veronika Štogrová. All rights reserved.',
     footer_city: 'Salon Dudek, Na Kovárně 8, Prague 10 Vršovice',
 

@@ -2013,3 +2013,31 @@ ul {
 .price-notes p { max-width: 640px; margin: 0 auto 6px; }
 .price-notes strong { color: var(--color-text); }
 .price-notes .btn { margin-top: 18px; }
+
+/* ============================================================
+   FOOTER LEGAL + LEGAL PAGE
+   ============================================================ */
+.footer-legal { font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.5); text-align: center; margin-top: 10px; }
+.footer-legal-links { font-size: 0.8rem; text-align: center; margin-top: 8px; color: rgba(255,255,255,0.4); }
+.footer-legal-links a { color: var(--color-accent-light); }
+.footer-legal-links a:hover { color: var(--color-white); }
+
+.legal-body { background: var(--color-off-white); }
+.legal-header { background: var(--color-dark); padding: 14px 24px; }
+.legal-back { display: inline-flex; align-items: center; gap: 12px; color: var(--color-accent-light); font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.legal-back img { height: 32px; width: auto; }
+.legal-page { max-width: 760px; margin: 0 auto; padding: 48px 24px 64px; color: var(--color-text); line-height: 1.75; }
+.legal-page h1 { font-family: var(--font-heading); font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px; }
+.legal-meta { color: var(--color-text-light); font-size: 0.9rem; margin-bottom: 24px; }
+.legal-toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
+.legal-toc a { font-size: 0.82rem; padding: 6px 14px; border: 1px solid var(--color-border); border-radius: 40px; color: var(--color-text); background: var(--color-white); }
+.legal-toc a:hover { border-color: var(--color-accent); }
+.legal-page section { padding-top: 12px; margin-bottom: 28px; scroll-margin-top: 16px; }
+.legal-page h2 { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-primary-dark); margin-bottom: 10px; }
+.legal-page h3 { font-size: 0.95rem; font-weight: 700; margin: 16px 0 6px; }
+.legal-page p { margin-bottom: 10px; }
+.legal-page ul { padding-left: 20px; margin-bottom: 10px; }
+.legal-page li { margin-bottom: 6px; list-style: disc; }
+.legal-page a { color: var(--color-primary-dark); text-decoration: underline; }
+.legal-footer { background: var(--color-dark); color: rgba(255,255,255,0.55); text-align: center; font-size: 0.82rem; padding: 24px; }
+.legal-footer a { color: var(--color-accent-light); }
