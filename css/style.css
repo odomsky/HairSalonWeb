@@ -1996,3 +1996,20 @@ ul {
 .wa-float:hover { transform: scale(1.08); color: #fff; }
 .wa-float { transition: transform var(--transition-fast), opacity var(--transition-fast); }
 .wa-float.wa-float-hidden { opacity: 0; pointer-events: none; transform: scale(0.8); }
+
+/* ============================================================
+   PRICE LIST (real prices from 1. 12. 2026)
+   ============================================================ */
+.pricing-grid.price-list { display: block; column-gap: 24px; }
+@media (min-width: 900px) { .pricing-grid.price-list { columns: 2; } }
+.price-list .pricing-card { padding: 32px 28px; break-inside: avoid; margin-bottom: 24px; display: inline-block; width: 100%; }
+.price-list .pricing-card:hover { transform: none; }
+.price-list .pricing-title { margin-bottom: 14px; }
+.price-list .pricing-item { gap: 16px; align-items: baseline; padding: 10px 0; }
+.price-list .pricing-item span:first-child { flex: 1; }
+.pricing-sub { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-dark); padding: 16px 0 4px; }
+.pricing-sub:first-child { padding-top: 0; }
+.price-notes { text-align: center; margin-top: 28px; color: var(--color-text-light); font-size: 0.9rem; line-height: 1.8; }
+.price-notes p { max-width: 640px; margin: 0 auto 6px; }
+.price-notes strong { color: var(--color-text); }
+.price-notes .btn { margin-top: 18px; }
