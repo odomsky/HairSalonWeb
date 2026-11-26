@@ -259,7 +259,7 @@ const translations = {
     /* --- Form feedback messages --- */
     form_err_fields: 'Prosím vyplňte jméno a zprávu.',
     form_err_email:  'Zadejte prosím platnou e-mailovou adresu.',
-    form_ig_copied:  'Zprávu jsem zkopírovala. Na Instagramu ji stačí vložit a odeslat, ozvu se co nejdříve.',
+    form_ig_copied:  'Zprávu jsem zkopírovala. Na Instagramu klikněte na Zpráva (Message), vložte ji a odešlete.',
     form_ig_manual:  'Otevírám Instagram. Zprávu mi tam prosím pošlete, ozvu se co nejdříve.',
   },
 
@@ -516,7 +516,7 @@ const translations = {
     /* --- Form feedback messages --- */
     form_err_fields: 'Please fill in your name and message.',
     form_err_email:  'Please enter a valid e-mail address.',
-    form_ig_copied:  'Your message is copied. Paste it into the Instagram chat and send it, I\'ll reply as soon as I can.',
+    form_ig_copied:  'Your message is copied. On Instagram tap Message, paste it and send it.',
     form_ig_manual:  'Opening Instagram. Please send me your message there, I\'ll reply as soon as I can.',
   }
 };
