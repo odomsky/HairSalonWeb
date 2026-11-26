@@ -1,5 +1,5 @@
 /* ============================================================
-   Revu Braid Art (Veronika Štogrová): bilingual i18n system
+   Revu Hair and Braids (Veronika Štogrová): bilingual i18n system
    Default language: Czech (cs)
    ============================================================ */
 
@@ -146,7 +146,7 @@ const translations = {
     process_desc: 'Objednání je jednoduché, stačí pár kroků a váš nový účes je na cestě.',
     step1_num:   '01',
     step1_title: 'Napíšete zprávu',
-    step1_desc:  'Kontaktujte mě na Instagramu nebo přes formulář níže.',
+    step1_desc:  'Zavolejte mi, napište na Instagram nebo přes formulář níže.',
     step2_num:   '02',
     step2_title: 'Domluvíme účes',
     step2_desc:  'Probereme, jaký účes chcete, a navrhnu nejlepší variantu pro váš typ vlasů.',
@@ -222,7 +222,8 @@ const translations = {
     /* --- Contact --- */
     contact_tag:   'Kontakt',
     contact_title: 'Objednejte se <span>ještě dnes</span>',
-    contact_desc:  'Ráda se vám ozvu co nejdříve. Napište mi na Instagram nebo přes formulář.',
+    contact_desc:  'Ráda se vám ozvu co nejdříve. Zavolejte mi, napište na Instagram nebo přes formulář.',
+    contact_phone_label:    'Telefon',
     contact_ig_label:       'Instagram',
     contact_location_label: 'Lokace',
     contact_location_val:   '<a href="https://www.google.com/maps/search/?api=1&amp;query=Na+Kov%C3%A1rn%C4%9B+8%2C+Praha+10" target="_blank" rel="noopener">Salon Dudek, Na Kovárně 8, Praha 10 Vršovice</a>',
@@ -240,7 +241,7 @@ const translations = {
     contact_cta: 'Objednejte si termín ještě dnes ✨',
 
     /* --- Footer --- */
-    footer_copy: '&copy; 2026 Revu Braid Art, Veronika Štogrová. Všechna práva vyhrazena.',
+    footer_copy: '&copy; 2026 Revu Hair and Braids, Veronika Štogrová. Všechna práva vyhrazena.',
     footer_city: 'Salon Dudek, Na Kovárně 8, Praha 10 Vršovice',
 
     /* --- Form feedback messages --- */
@@ -390,7 +391,7 @@ const translations = {
     process_desc: 'Booking is simple, just a few steps and your new hairstyle is on its way.',
     step1_num:   '01',
     step1_title: 'Send a message',
-    step1_desc:  'Contact me on Instagram or via the form below.',
+    step1_desc:  'Call me, message me on Instagram or use the form below.',
     step2_num:   '02',
     step2_title: 'Agree on a style',
     step2_desc:  'We\'ll discuss what style you want and I\'ll suggest the best option for your hair type.',
@@ -466,7 +467,8 @@ const translations = {
     /* --- Contact --- */
     contact_tag:   'Contact',
     contact_title: 'Book your appointment <span>today</span>',
-    contact_desc:  'I\'ll get back to you as soon as possible. Message me on Instagram or via the form.',
+    contact_desc:  'I\'ll get back to you as soon as possible. Call me, message me on Instagram or use the form.',
+    contact_phone_label:    'Phone',
     contact_ig_label:       'Instagram',
     contact_location_label: 'Location',
     contact_location_val:   '<a href="https://www.google.com/maps/search/?api=1&amp;query=Na+Kov%C3%A1rn%C4%9B+8%2C+Praha+10" target="_blank" rel="noopener">Salon Dudek, Na Kovárně 8, Prague 10 Vršovice</a>',
@@ -484,7 +486,7 @@ const translations = {
     contact_cta: 'Book your appointment today ✨',
 
     /* --- Footer --- */
-    footer_copy: '&copy; 2026 Revu Braid Art, Veronika Štogrová. All rights reserved.',
+    footer_copy: '&copy; 2026 Revu Hair and Braids, Veronika Štogrová. All rights reserved.',
     footer_city: 'Salon Dudek, Na Kovárně 8, Prague 10 Vršovice',
 
     /* --- Form feedback messages --- */

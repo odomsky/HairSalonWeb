@@ -1830,3 +1830,13 @@ ul {
   font-size: 0.85rem;
   padding: 6px 10px;
 }
+
+
+/* ---------- Logo images (from the business cards) ---------- */
+.nav-logo { flex-direction: row; align-items: center; gap: 10px; }
+.nav-logo-mark { height: 34px; width: auto; display: block; }
+.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+.nav-logo-name { text-transform: uppercase; letter-spacing: 0.12em; }
+.hero-logo { display: block; width: clamp(220px, 38vw, 340px); height: auto; margin: 0 auto 18px; }
+.hero-title em { display: block; font-size: clamp(1.6rem, 4vw, 2.6rem); }
+.footer-logo { display: block; width: 150px; height: auto; margin: 0 auto 8px; }
